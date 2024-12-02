@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 
 const awsmobile = {
-  aws_project_region: 'us-east-2',
+  aws_project_region: 'us-east-1',
 };
 
 Amplify.configure(awsmobile);
