@@ -1,0 +1,23 @@
+@import '@mantine/core/styles.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-50: 238, 241, 254;
+    --primary-500: 45, 90, 240;
+    --primary-700: 13, 48, 163;
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, rgb(var(--primary-500)) 0%, rgb(var(--primary-700)) 100%);
+}
