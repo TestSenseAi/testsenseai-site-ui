@@ -14,17 +14,11 @@ const sizes = {
 
 export function Logo({ size = 'md', variant = 'light' }: LogoProps) {
   const { icon, text } = sizes[size];
-  
+
   return (
     <Group gap="xs" wrap="nowrap">
-      <Bot
-        size={icon}
-        className="text-blue-500"
-      />
-      <Text
-        size={text}
-        fw={700}
-      >
+      <Bot size={icon} className="text-blue-500" />
+      <Text size={text} fw={700}>
         TestSense
         <Text component="span" c="blue" inherit>
           AI
