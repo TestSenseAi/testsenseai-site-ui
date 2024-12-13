@@ -1,0 +1,13 @@
+{
+  "resourceName": "testsenseaiSiteMediaStorage",
+  "policyUUID": "196736f7",
+  "bucketName": "testsenseaisiteuie52d347ee2cc4ab7a19caed440d663",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "S3Trigger30aab066",
+  "groupAccess": {}
+}

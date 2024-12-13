@@ -5,9 +5,7 @@
       "dependsOn": [],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
+        "mfaTypes": ["SMS"],
         "passwordProtectionSettings": {
           "passwordPolicyCharacters": [
             "REQUIRES_LOWERCASE",
@@ -27,18 +25,37 @@
           "PICTURE"
         ],
         "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
+        "usernameAttributes": ["EMAIL"],
+        "verificationMechanisms": ["EMAIL"]
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
     }
   },
+  "function": {
+    "S3Trigger30aab066": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "parameters": {
+    "AMPLIFY_function_S3Trigger30aab066_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger30aab066"
+        }
+      ]
+    },
+    "AMPLIFY_function_S3Trigger30aab066_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger30aab066"
+        }
+      ]
+    },
     "AMPLIFY_storage_testsenseaisiteui0805d5fd_bucketName": {
       "usedBy": [
         {
@@ -57,6 +74,17 @@
     }
   },
   "storage": {
+    "testsenseaiSiteMediaStorage": {
+      "dependsOn": [
+        {
+          "attributes": ["Name", "Arn", "LambdaExecutionRole"],
+          "category": "function",
+          "resourceName": "S3Trigger30aab066"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    },
     "testsenseaisiteui0805d5fd": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
