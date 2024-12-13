@@ -10,5 +10,23 @@ export type AmplifyDependentResourcesAttributes = {
       "UserPoolId": "string",
       "UserPoolName": "string"
     }
+<<<<<<< Updated upstream
+=======
+  },
+  "function": {
+    "S3Trigger30aab066": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    }
+  },
+  "storage": {
+    "testsenseaiSiteMediaStorage": {
+      "BucketName": "string",
+      "Region": "string"
+    }
+>>>>>>> Stashed changes
   }
 }

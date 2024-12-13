@@ -10,6 +10,11 @@
       "StackName": "amplify-testsenseaisiteui-master-564d7",
       "StackId": "arn:aws:cloudformation:us-east-1:337909748951:stack/amplify-testsenseaisiteui-master-564d7/6d26f970-b0d8-11ef-8efe-124a16816a11",
       "AmplifyAppId": "d300zvdcqo5v0j"
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
     },
     "categories": {
       "auth": {
@@ -19,8 +24,21 @@
         "testsenseaisiteui0805d5fd": {
           "bucketName": "amplify-testsenseaisiteui-master-564d7-deployment",
           "region": "us-east-1"
+<<<<<<< Updated upstream
         }
       }
+=======
+        },
+        "testsenseaiSiteMediaStorage": {}
+      },
+      "function": {
+        "S3Trigger30aab066": {
+          "deploymentBucketName": "amplify-testsenseaisiteui-master-564d7-deployment",
+          "s3Key": "amplify-builds/S3Trigger30aab066-4a5953535a31337a3130-build.zip"
+        }
+      }
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     }
   }
 }
