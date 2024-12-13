@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-amplify/backend": "^1.9.0",
     "@aws-amplify/ui-react": "^6.7.1",
     "@mantine/core": "^7.6.1",
     "@mantine/hooks": "^7.6.1",
