@@ -6,22 +6,26 @@ import type { Feature } from '../types';
 const features: Feature[] = [
   {
     title: 'Figma to Page Object',
-    description: 'Automatically generate page objects from your Figma designs, saving hours of manual work.',
+    description:
+      'Automatically generate page objects from your Figma designs, saving hours of manual work.',
     icon: <Figma size={32} />,
   },
   {
     title: 'Pipeline Integration',
-    description: 'Seamlessly integrate with your CI/CD pipeline for automated testing on every commit.',
+    description:
+      'Seamlessly integrate with your CI/CD pipeline for automated testing on every commit.',
     icon: <GitBranch size={32} />,
   },
   {
     title: 'AI-Powered Generation',
-    description: 'Let AI analyze your application and generate comprehensive test scenarios.',
+    description:
+      'Let AI analyze your application and generate comprehensive test scenarios.',
     icon: <Cpu size={32} />,
   },
   {
     title: 'Cross-Platform Testing',
-    description: 'Test across multiple browsers and devices with a single command.',
+    description:
+      'Test across multiple browsers and devices with a single command.',
     icon: <Monitor size={32} />,
   },
 ];

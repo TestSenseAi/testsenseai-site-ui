@@ -14,22 +14,20 @@ export function Hero() {
           <Group justify="center">
             <motion.div
               animate={{ rotate: [0, 10, -10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             >
               <Bot size={64} className="text-blue-500" />
             </motion.div>
           </Group>
-          
+
           <div className="text-center">
-            <Title className="text-7xl font-extrabold mb-4">
-              TestSenseAI
-            </Title>
+            <Title className="text-7xl font-extrabold mb-4">TestSenseAI</Title>
             <Title order={2} className="text-4xl font-bold mb-6">
               Rest Easy,{' '}
-              <Text 
-                component="span" 
+              <Text
+                component="span"
                 inherit
-                variant="gradient" 
+                variant="gradient"
                 gradient={{ from: 'blue', to: 'cyan' }}
               >
                 Test Smart
