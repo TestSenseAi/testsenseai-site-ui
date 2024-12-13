@@ -5,7 +5,9 @@
       "dependsOn": [],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
-        "mfaTypes": ["SMS"],
+        "mfaTypes": [
+          "SMS"
+        ],
         "passwordProtectionSettings": {
           "passwordPolicyCharacters": [
             "REQUIRES_LOWERCASE",
@@ -25,8 +27,12 @@
           "PICTURE"
         ],
         "socialProviders": [],
-        "usernameAttributes": ["EMAIL"],
-        "verificationMechanisms": ["EMAIL"]
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
@@ -77,7 +83,11 @@
     "testsenseaiSiteMediaStorage": {
       "dependsOn": [
         {
-          "attributes": ["Name", "Arn", "LambdaExecutionRole"],
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ],
           "category": "function",
           "resourceName": "S3Trigger30aab066"
         }

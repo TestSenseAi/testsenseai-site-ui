@@ -28,6 +28,24 @@
           }
         }
       }
+    },
+    "categories": {
+      "storage": {
+        "testsenseaisiteui0805d5fd": {
+          "bucketName": "amplify-testsenseaisiteui-master-564d7-deployment",
+          "region": "us-east-1"
+        },
+        "testsenseaiSiteMediaStorage": {}
+      },
+      "auth": {
+        "testsenseaisiteui": {}
+      },
+      "function": {
+        "S3Trigger30aab066": {
+          "deploymentBucketName": "amplify-testsenseaisiteui-master-564d7-deployment",
+          "s3Key": "amplify-builds/S3Trigger30aab066-4a5953535a31337a3130-build.zip"
+        }
+      }
     }
   }
 }
