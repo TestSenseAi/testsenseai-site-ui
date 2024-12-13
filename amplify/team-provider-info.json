@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "testsenseaisiteui": {}
+      },
+      "storage": {
+        "testsenseaisiteui0805d5fd": {
+          "bucketName": "amplify-testsenseaisiteui-master-564d7-deployment",
+          "region": "us-east-1"
+        }
       }
     }
   }

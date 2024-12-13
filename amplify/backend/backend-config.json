@@ -38,6 +38,24 @@
       "service": "Cognito"
     }
   },
+  "parameters": {
+    "AMPLIFY_storage_testsenseaisiteui0805d5fd_bucketName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "testsenseaisiteui0805d5fd"
+        }
+      ]
+    },
+    "AMPLIFY_storage_testsenseaisiteui0805d5fd_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "testsenseaisiteui0805d5fd"
+        }
+      ]
+    }
+  },
   "storage": {
     "testsenseaisiteui0805d5fd": {
       "dependsOn": [],
