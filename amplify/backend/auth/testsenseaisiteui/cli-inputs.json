@@ -5,11 +5,15 @@
     "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "testse0cb892f7",
     "userPoolName": "testsenseaisiteui",
-    "autoVerifiedAttributes": ["email"],
+    "autoVerifiedAttributes": [
+      "email"
+    ],
     "mfaConfiguration": "OFF",
-    "mfaTypes": ["SMS Text Message"],
-    "smsAuthenticationMessage": "Your authentication code is for TestSenseAI: {####}",
-    "smsVerificationMessage": "Your verification code is for TestSenseAI: {####}",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
     "emailVerificationSubject": "Verification code for TestSenseAI: {####}",
     "emailVerificationMessage": "Verification code for your TestSenseAI account: {####}",
     "defaultPasswordPolicy": false,
@@ -40,7 +44,9 @@
     "resourceName": "testsenseaisiteui",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",
-    "usernameAttributes": ["email"],
+    "usernameAttributes": [
+      "email"
+    ],
     "useDefault": "manual",
     "userPoolGroups": false,
     "userPoolGroupList": [],
@@ -48,6 +54,21 @@
     "thirdPartyAuth": false,
     "authProviders": [],
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": [],
+    "hostedUI": false
   }
 }
