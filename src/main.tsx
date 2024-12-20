@@ -1,8 +1,8 @@
 import React from 'react';
 import App from './App';
 import './index.css';
-import dotenv from 'dotenv';
 import * as Sentry from '@sentry/react';
+import dotenv from 'dotenv';
 import { createRoot } from 'react-dom/client';
 
 dotenv.config();
@@ -11,7 +11,9 @@ Sentry.init({
   integrations: [
     Sentry.browserTracingIntegration(),
     Sentry.replayIntegration(),
+    Sentry.captureConsoleIntegration(),
   ],
+  dist: 'dist',
   // Tracing
   tracesSampleRate: 1.0, //  Capture 100% of the transactions
   // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled

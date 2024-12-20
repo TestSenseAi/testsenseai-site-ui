@@ -12,6 +12,8 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "noEmitHelpers": true,
+    "importHelpers": true,
 
     "strict": true,
     "noUnusedLocals": true,
