@@ -11,7 +11,7 @@ export default defineConfig({
     sentryVitePlugin({
       org: 'testsenseai',
       project: 'javascript-react',
-      authToken: process.env.SENTRY_AUTH_TOKEN,
+      authToken: process.env.VITE_SENTRY_AUTH_TOKEN,
     }),
   ],
   optimizeDeps: {
