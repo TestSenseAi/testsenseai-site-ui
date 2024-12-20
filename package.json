@@ -12,11 +12,12 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@aws-amplify/backend": "^1.9.0",
-    "@aws-amplify/ui-react": "^6.7.1",
     "@mantine/core": "^7.6.1",
     "@mantine/hooks": "^7.6.1",
-    "aws-amplify": "^6.10.0",
+    "@sentry/react": "^8.47.0",
+    "@sentry/vite-plugin": "^2.22.7",
+    "@types/node": "^22.10.2",
+    "dotenv": "^16.4.7",
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",

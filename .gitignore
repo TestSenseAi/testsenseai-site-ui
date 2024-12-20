@@ -43,4 +43,9 @@ amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
 **.sample
-#amplify-do-not-edit-end
+
+.env
+.npmrc
+
+# Sentry Config File
+.env.sentry-build-plugin
