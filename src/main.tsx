@@ -7,7 +7,7 @@ import { createRoot } from 'react-dom/client';
 
 dotenv.config();
 Sentry.init({
-  dsn: import.meta.env.SENTRY_DSN,
+  dsn: process.env.VITE_SENTRY_DSN,
   integrations: [
     Sentry.browserTracingIntegration(),
     Sentry.replayIntegration(),
