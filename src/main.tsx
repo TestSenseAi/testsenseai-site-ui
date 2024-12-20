@@ -2,12 +2,11 @@ import React from 'react';
 import App from './App';
 import './index.css';
 import * as Sentry from '@sentry/react';
-import dotenv from 'dotenv';
+
 import { createRoot } from 'react-dom/client';
 
-dotenv.config();
 Sentry.init({
-  dsn: process.env.VITE_SENTRY_DSN,
+  dsn: import.meta.env.VITE_SENTRY_DSN,
   integrations: [
     Sentry.browserTracingIntegration(),
     Sentry.replayIntegration(),
