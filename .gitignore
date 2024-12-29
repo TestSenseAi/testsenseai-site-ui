@@ -49,3 +49,10 @@ amplifytools.xcconfig
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+
+build/
+.bolt
+.vscode
+.npmrc
+

@@ -1,59 +1,80 @@
-import { Container, Title, Text, Button, Group, Stack } from '@mantine/core';
-import { motion } from 'framer-motion';
-import { Bot, ArrowRight } from 'lucide-react';
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Stack,
+  Text,
+  VStack,
+} from '@chakra-ui/react';
+import { CircuitBoard } from 'lucide-react';
 
-export function Hero() {
+const Hero = () => {
+  const handleDashboardClick = () => {
+    window.location.href = '/dashboard';
+  };
+
   return (
-    <Container size="lg" py={120}>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Stack align="center" spacing="xl">
-          <Group justify="center">
-            <motion.div
-              animate={{ rotate: [0, 10, -10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              <Bot size={64} className="text-blue-500" />
-            </motion.div>
-          </Group>
+    <Box
+      id="home"
+      minH="100vh"
+      pt={32}
+      position="relative"
+      _before={{
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        bgGradient: 'radial(circle at 50% 50%, brand.dark.200, brand.dark.300)',
+        opacity: 0.6,
+        zIndex: 0,
+      }}
+    >
+      <Container maxW="container.xl" position="relative" zIndex={1}>
+        <VStack spacing={8} alignItems="center" textAlign="center">
+          <CircuitBoard size={64} color="#682AE9" />
 
-          <div className="text-center">
-            <Title className="text-7xl font-extrabold mb-4">TestSenseAI</Title>
-            <Title order={2} className="text-4xl font-bold mb-6">
-              Rest Easy,{' '}
-              <Text
-                component="span"
-                inherit
-                variant="gradient"
-                gradient={{ from: 'blue', to: 'cyan' }}
-              >
-                Test Smart
-              </Text>
-            </Title>
-            <Text c="dimmed" size="xl" maw={600} mx="auto" mb={40}>
-              Revolutionize your QA process with AI-powered test automation.
-              From Figma to production, we've got you covered.
+          <Stack spacing={4} maxW="800px">
+            <Heading
+              as="h1"
+              size="4xl"
+              bgGradient="linear(to-r, brand.primary, brand.secondary)"
+              bgClip="text"
+              letterSpacing="tight"
+            >
+              TestSenseAi
+            </Heading>
+
+            <Heading as="h2" size="lg" fontWeight="normal" color="gray.300">
+              AI-Powered Test Automation Framework
+            </Heading>
+
+            <Text fontSize="xl" color="gray.400">
+              Generate, maintain, and optimize tests with ease. Let AI handle the complexity
+              while you focus on delivering quality software.
             </Text>
-          </div>
+          </Stack>
 
-          <Group justify="center" gap="md">
+          <Stack direction={{ base: 'column', md: 'row' }} spacing={4} pt={8}>
+            <Button size="lg" variant="primary" onClick={handleDashboardClick}>
+              Get Started
+            </Button>
             <Button
-              size="xl"
-              variant="gradient"
-              gradient={{ from: 'blue', to: 'cyan' }}
-              rightSection={<ArrowRight size={20} />}
+              size="lg"
+              variant="secondary"
+              as="a"
+              href="https://docs.testsense.ai"
+              target="_blank"
             >
-              Start Testing Smarter
+              View Documentation
             </Button>
-            <Button size="xl" variant="light">
-              Watch Demo
-            </Button>
-          </Group>
-        </Stack>
-      </motion.div>
-    </Container>
+          </Stack>
+        </VStack>
+      </Container>
+    </Box>
   );
-}
+};
+
+export default Hero;

@@ -1,20 +1,26 @@
-import { MantineProvider } from '@mantine/core';
-import { theme } from './theme';
-import { Header } from './components/layout/Header';
-import { Hero } from './components/Hero';
-import { Features } from './components/Features';
+import { ChakraProvider } from '@chakra-ui/react';
+import Navbar from './components/NavBar';
+import ComingSoonBanner from './components/common/ComingSoonBanner';
+import Hero from './components/Hero';
+import Features from './components/features/Features';
+import Pricing from './components/pricing/Pricing';
+import FAQ from './components/faq/FAQ';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import theme from './theme';
 
 function App() {
   return (
-    <MantineProvider theme={theme} defaultColorScheme="dark">
-      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950">
-        <Header />
-        <main className="pt-16">
-          <Hero />
-          <Features />
-        </main>
-      </div>
-    </MantineProvider>
+    <ChakraProvider theme={theme}>
+      <ComingSoonBanner />
+      <Navbar />
+      <Hero />
+      <Features />
+      <Pricing />
+      <FAQ />
+      <Contact />
+      <Footer />
+    </ChakraProvider>
   );
 }
 

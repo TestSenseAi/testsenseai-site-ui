@@ -1,8 +1,7 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import App from './App';
 import './index.css';
 import * as Sentry from '@sentry/react';
-
 import { createRoot } from 'react-dom/client';
 
 Sentry.init({
@@ -22,10 +21,9 @@ Sentry.init({
   replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
 });
 
-const container = document.getElementById('root')!;
-const root = createRoot(container);
-root.render(
-  <React.StrictMode>
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
