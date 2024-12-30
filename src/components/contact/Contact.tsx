@@ -25,7 +25,7 @@ const Contact = () => {
             variant="primary"
             size="lg"
             onClick={() =>
-              (window.location.href = 'mailto:contact@testsense.ai')
+              (window.location.href = 'mailto:support@testsense.ai')
             }
           >
             Talk to Us

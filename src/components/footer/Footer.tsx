@@ -32,7 +32,7 @@ const Footer = () => {
 
             <HStack spacing={6}>
               <Link
-                href="https://github.com/testsense-ai"
+                href="https://github.com/TestSenseAI"
                 color="gray.400"
                 _hover={{ color: 'white' }}
                 display="flex"
