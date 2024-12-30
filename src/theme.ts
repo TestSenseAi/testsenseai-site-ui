@@ -26,6 +26,12 @@ const theme = extendTheme({
   },
   components: {
     Button: {
+      baseStyle: {
+        _hover: {
+          transform: 'scale(1.02)',
+          transition: 'all 0.2s ease-in-out',
+        },
+      },
       variants: {
         primary: {
           bg: 'brand.primary',
@@ -42,6 +48,15 @@ const theme = extendTheme({
           _hover: {
             bg: 'whiteAlpha.100',
           },
+        },
+      },
+    },
+    Link: {
+      baseStyle: {
+        transition: 'all 0.2s ease-in-out',
+        _hover: {
+          textDecoration: 'none',
+          color: 'brand.primary',
         },
       },
     },
